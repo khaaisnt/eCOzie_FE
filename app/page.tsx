@@ -1,18 +1,61 @@
 import Accordion from "@/components/accordion";
-import { RiWhatsappLine } from "@remixicon/react";
+import { RiArrowRightLongLine, RiWhatsappLine } from "@remixicon/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="px-6 md:px-16">
-      <section className="mt-72"></section>
+      {/* Header */}
+      <section className="mt-8 mb-32 bg-linear-to-r from-emerald-50/30 via-white to-lime-50/30 px-2 pt-6 sm:px-4">
+        <div className="flex flex-col items-center justify-center text-center">
+          <div className="flex items-center justify-center gap-2">
+            <div className="bg-accent-lime h-2 w-2 p-0.5 rounded-full animate-pulse"></div>
+            <p className="text-xs sm:text-sm">YOUR EVERYDAY ECO MOVEMENT</p>
+          </div>
+          <h1 className="mt-3 max-w-3xl font-unbounded text-3xl font-bold leading-tight sm:text-5xl">
+            Sampah Terpilah, Lingkungan Lebih Indah!
+          </h1>
+          <p className="my-6 max-w-3xl text-sm sm:text-base">
+            Mulai kebiasaan memilah sampah dari rumah. Setor dengan mudah
+            melalui WhatsApp dan dapatkan reward sebagai apresiasi atas
+            kontribusimu untuk lingkungan.
+          </p>
+          <button
+            type="button"
+            className="py-3 px-8 bg-brand-primary text-white rounded-xl flex gap-2 cursor-pointer shadow-sm shadow-brand-primary hover:bg-brand-strong transition-all"
+          >
+            Mulai Sekarang
+            <RiArrowRightLongLine />
+          </button>
+        </div>
+
+        <div className="relative mt-12">
+          <Image
+            src="/photos/header-img.png"
+            alt="Berbagai bahan daur ulang yang sudah dipilah"
+            width={1620}
+            height={1080}
+            className="h-52 w-full rounded-2xl object-cover object-center sm:h-64 lg:h-110"
+          />
+          <div
+            role="img"
+            aria-label="Langkah 1"
+            className="absolute -top-10 right-[7%] flex h-16 w-16 flex-col items-center justify-center rounded-full text-white bg-accent-lime shadow-sm sm:h-24 sm:w-24"
+          >
+            <span className="text-[8px] font-semibold tracking-widest">
+              STEP
+            </span>
+            <span className="text-3xl font-bold leading-none">1</span>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="mt-12">
         <div className="relative rounded-3xl bg-cyan-100/60 px-6 pt-8 sm:px-10 sm:pt-10 lg:min-h-80 lg:px-12 lg:py-12">
           <div className="relative z-20 pb-6 lg:max-w-[60%] lg:pb-0">
             <div className="flex items-center gap-2">
-              <div className="bg-accent-lime h-2 w-2 p-0.5 rounded-full"></div>
+              <div className="bg-accent-lime h-2 w-2 p-0.5 rounded-full animate-pulse"></div>
               <p>BE PART OF THE CHANGE</p>
             </div>
             <h2 className="font-unbounded text-3xl font-bold sm:text-4xl lg:text-5xl mb-16">
@@ -20,7 +63,7 @@ export default function Home() {
             </h2>
             <button
               type="button"
-              className="hidden items-center gap-2 rounded-xl px-8 py-2 bg-brand-strong outline outline-gray-300 transition-all text-white lg:flex cursor-pointer"
+              className="hidden items-center gap-2 rounded-xl px-8 py-2 mb-12 bg-brand-strong outline outline-gray-300 transition-all text-white lg:flex cursor-pointer"
             >
               <RiWhatsappLine />
               Hubungi Kami
