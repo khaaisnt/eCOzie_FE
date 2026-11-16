@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { RiWhatsappLine } from "@remixicon/react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +12,12 @@ export default function Navbar() {
 
   return (
     <header className="relative flex flex-wrap items-center justify-between bg-white px-5 py-4 sm:px-8 lg:px-14">
-      <a
-        href="#beranda"
+      <Link
+        href="/beranda"
         className="text-2xl font-bold font-unbounded sm:text-3xl"
       >
         eCOzie
-      </a>
+      </Link>
 
       <button
         type="button"
@@ -35,41 +36,41 @@ export default function Navbar() {
       >
         <ul className="flex w-full text-center flex-col gap-4 lg:w-auto lg:flex-row lg:items-center lg:gap-10 xl:gap-16">
           <li>
-            <a
-              href="#"
+            <Link
+              href="/"
               aria-current="page"
               className={`${linkClassName} after:w-full`}
               onClick={() => setIsMenuOpen(false)}
             >
               Beranda
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#tentang"
+            <Link
+              href="/tentang"
               className={linkClassName}
               onClick={() => setIsMenuOpen(false)}
             >
               Tentang
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#katalog"
+            <Link
+              href="/katalog"
               className={linkClassName}
               onClick={() => setIsMenuOpen(false)}
             >
               Katalog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#kontak"
+            <Link
+              href="/kontak"
               className={linkClassName}
               onClick={() => setIsMenuOpen(false)}
             >
               Kontak
-            </a>
+            </Link>
           </li>
           <li className="pt-2 lg:hidden">
             <button

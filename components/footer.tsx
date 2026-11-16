@@ -5,6 +5,7 @@ import {
   RiWhatsappLine,
   RiYoutubeLine,
 } from "@remixicon/react";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -35,24 +36,24 @@ export default function Footer() {
             <h5 className="text-xl font-semibold mb-6 uppercase">Explore</h5>
             <ul className="w-auto gap-2 flex flex-col">
               <li>
-                <a href="#" className={linkClassName}>
+                <Link href="/" className={linkClassName}>
                   Beranda
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={linkClassName}>
+                <Link href="/tentang" className={linkClassName}>
                   Tentang
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={linkClassName}>
+                <Link href="/katalog" className={linkClassName}>
                   Katalog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={linkClassName}>
+                <Link href="/kontak" className={linkClassName}>
                   Kontak
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

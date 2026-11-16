@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="px-6 md:px-16">
+    <main>
       {/* Header */}
       <section className="mt-8 mb-32 bg-linear-to-r from-emerald-50/30 via-white to-lime-50/30 px-2 pt-6 sm:px-4">
         <div className="flex flex-col items-center justify-center text-center">
