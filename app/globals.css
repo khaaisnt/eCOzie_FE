@@ -4,18 +4,19 @@
   --color-background: #fdfdfd;
   --color-foreground: #101010;
   --color-brand-primary: #42b97f;
+  --color-brand-strong: #05a060;
   --color-accent-lime: #caeb46;
   --color-accent-cyan: #12bee6;
   --color-action-primary: #1a7f4f;
   --color-action-hover: #0f3d2b;
 }
 
-* {
-  color: #101010;
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --font-unbounded: var(--font-unbounded);
 }
 
 body {
   background: var(--background);
-  color: #101010;
   font-family: poppins, unbounded, sans-serif;
 }
