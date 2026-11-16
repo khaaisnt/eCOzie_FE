@@ -1,16 +1,47 @@
 import Accordion from "@/components/accordion";
+import { RiWhatsappLine } from "@remixicon/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="px-6 md:px-16">
-      
+      <section className="mt-72"></section>
+
+      {/* CTA */}
+      <section className="mt-12">
+        <div className="relative rounded-3xl bg-cyan-100/60 px-6 pt-8 sm:px-10 sm:pt-10 lg:min-h-80 lg:px-12 lg:py-12">
+          <div className="relative z-20 pb-6 lg:max-w-[60%] lg:pb-0">
+            <div className="flex items-center gap-2">
+              <div className="bg-accent-lime h-2 w-2 p-0.5 rounded-full"></div>
+              <p>BE PART OF THE CHANGE</p>
+            </div>
+            <h2 className="font-unbounded text-3xl font-bold sm:text-4xl lg:text-5xl mb-16">
+              Yuk, Mulai Perubahan dari Sekarang!
+            </h2>
+            <button
+              type="button"
+              className="hidden items-center gap-2 rounded-xl px-8 py-2 bg-brand-strong outline outline-gray-300 transition-all text-white lg:flex cursor-pointer"
+            >
+              <RiWhatsappLine />
+              Hubungi Kami
+            </button>
+          </div>
+          <Image
+            src="/photos/woman.png"
+            alt="Wanita membawa sampah daur ulang"
+            width={500}
+            height={500}
+            className="relative z-10 -mb-8 ml-auto block h-64 w-auto sm:h-80 lg:absolute lg:bottom-0 lg:right-0 lg:mb-0 lg:h-96 xl:h-112"
+          />
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="my-32">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2">
             <div className="bg-accent-lime h-2 w-2 p-0.5 rounded-full"></div>
-            <p className="">FREQUENTLY ASKED QUESTIONS</p>
+            <p>FREQUENTLY ASKED QUESTIONS</p>
           </div>
           <h2 className="font-unbounded text-4xl font-bold">
             Penasaran dengan Ecozie?
