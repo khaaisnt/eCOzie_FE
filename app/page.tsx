@@ -124,7 +124,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-stretch">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-3 lg:items-stretch">
           <div>
             <div className="mb-5 rounded-3xl bg-brand-primary p-5 text-white sm:p-6 lg:mb-6 lg:p-8">
               <RiLeafLine className="mb-4 sm:mb-6" />
@@ -154,7 +154,7 @@ export default function Home() {
               alt="Sampah botol yang sedang dipilah untuk didaur ulang"
               width={300}
               height={500}
-              className="h-64 w-full rounded-3xl object-cover sm:h-80 lg:h-full lg:max-h-152"
+              className="h-64 rounded-3xl object-cover sm:h-80 lg:h-full lg:max-h-100"
             />
           </div>
 
