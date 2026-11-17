@@ -3,9 +3,13 @@
 import React, { useState } from "react";
 import { RiWhatsappLine } from "@remixicon/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = (usePathname() ?? "/").replace(/\/+$/, "") || "/";
+  const isActivePath = (href: string) =>
+    pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
 
   const linkClassName =
     "relative py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent-lime after:transition-all hover:after:w-full";
@@ -38,8 +42,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/"
-              aria-current="page"
-              className={`${linkClassName} after:w-full`}
+              aria-current={isActivePath("/") ? "page" : undefined}
+              className={`${linkClassName} ${isActivePath("/") ? "after:w-full" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Beranda
@@ -48,7 +52,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/tentang"
-              className={linkClassName}
+              aria-current={isActivePath("/tentang") ? "page" : undefined}
+              className={`${linkClassName} ${isActivePath("/tentang") ? "after:w-full" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Tentang
@@ -57,7 +62,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/katalog"
-              className={linkClassName}
+              aria-current={isActivePath("/katalog") ? "page" : undefined}
+              className={`${linkClassName} ${isActivePath("/katalog") ? "after:w-full" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Katalog
@@ -66,7 +72,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/kontak"
-              className={linkClassName}
+              aria-current={isActivePath("/kontak") ? "page" : undefined}
+              className={`${linkClassName} ${isActivePath("/kontak") ? "after:w-full" : ""}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Kontak
