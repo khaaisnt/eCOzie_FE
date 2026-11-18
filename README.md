@@ -59,7 +59,7 @@ git clone [URL_REPOSITORY]
 **2. Masuk ke Direktori Project**
 
 ```bash
-cd eCOzie_FE/webdesign_timGatauBingung_technoversary_vol.II
+cd /webdesign_timGatauBingung_technoversary_vol.II
 ```
 
 **3. Install Dependencies**
