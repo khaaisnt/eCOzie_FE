@@ -1,98 +1,36 @@
-# ECOZIE – Digital Waste Bank
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**Ecozie – Small Steps, Greener Future.**
+## Getting Started
 
-## 1. Deskripsi Website
-
-Ecozie merupakan website bank sampah digital yang bertujuan untuk memudahkan masyarakat dalam mengelola dan menyetorkan sampah yang masih memiliki nilai guna.
-
-Melalui Ecozie, pengguna dapat mengenali berbagai jenis sampah yang dapat didaur ulang, mengetahui informasi terkait kategori sampah, serta mengajukan penjemputan sampah secara lebih praktis.
-
-Ecozie hadir sebagai solusi digital untuk meningkatkan kesadaran masyarakat terhadap pentingnya pengelolaan sampah dan penerapan gaya hidup ramah lingkungan.
-
-### Tujuan Website
-
-- Mempermudah masyarakat dalam mengakses layanan bank sampah.
-- Memberikan informasi mengenai jenis dan kategori sampah yang dapat didaur ulang.
-- Memfasilitasi pengajuan penjemputan sampah.
-- Meningkatkan kesadaran masyarakat terhadap pengelolaan sampah yang bertanggung jawab.
-
-### Fitur Utama
-
-1. **Informasi dan Edukasi Sampah** – Menyediakan informasi mengenai berbagai jenis sampah beserta cara pengelolaannya.
-2. **Kategori Sampah** – Menampilkan berbagai kategori sampah yang dapat disetorkan, seperti plastik, kertas, logam, dan kaca.
-3. **Layanan Penjemputan** – Memudahkan pengguna mengajukan permintaan penjemputan sampah dengan memilih tanggal yang diinginkan.
-4. **Kontak WhatsApp** – Menghubungkan pengguna dengan admin Ecozie melalui WhatsApp untuk mendapatkan informasi dan bantuan.
-
-## 2. Teknologi yang Digunakan
-
-Berikut teknologi dan tools yang digunakan dalam pengembangan website Ecozie:
-
-- **Next.js** – Framework React untuk pengembangan website.
-- **React** – Library JavaScript untuk membangun antarmuka pengguna.
-- **TypeScript** – Bahasa pemrograman untuk pengembangan aplikasi yang lebih terstruktur dan type-safe.
-- **Tailwind CSS** – Framework CSS untuk mengatur tampilan dan styling website.
-- **Git & GitHub** – Digunakan untuk version control dan kolaborasi pengembangan project.
-- **Visual Studio Code** – Code editor yang digunakan dalam pengembangan website.
-
-## 3. Petunjuk Instalasi dan Menjalankan Project
-
-### Persyaratan
-
-Pastikan perangkat telah memiliki software berikut:
-
-- Node.js (disarankan versi LTS).
-- npm (Node Package Manager).
-- Git.
-- Code Editor (disarankan Visual Studio Code).
-
-### Langkah Instalasi
-
-**1. Clone Repository**
-
-Clone repository menggunakan perintah berikut:
-
-```bash
-git clone [URL_REPOSITORY]
-```
-
-**2. Masuk ke Direktori Project**
-
-```bash
-cd eCOzie_FE/webdesign_timGatauBingung_technoversary_vol.II
-```
-
-**3. Install Dependencies**
-
-Install seluruh dependencies yang dibutuhkan:
-
-```bash
-npm install
-```
-
-**4. Jalankan Development Server**
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-**5. Buka Website**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Setelah development server berhasil dijalankan, buka browser dan akses alamat berikut:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```text
-http://localhost:3000
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Website Ecozie siap dijalankan secara lokal.
+## Learn More
 
-## 4. Tim Pengembang
+To learn more about Next.js, take a look at the following resources:
 
-**Nama Tim:** Spontan Ngoding
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-**Anggota Tim:**
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Zuraida Desy Kurniawati
-2. Graschindya Alinsky Riya
-3. Rakha Adrian Nur Tanaya
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
